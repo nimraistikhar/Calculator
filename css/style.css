@@ -1,0 +1,141 @@
+/* ***********REUSABLE COMPONENTS*************** */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+@media (max-width: 805px) {
+  html {
+    font-size: 55%; } }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%; } }
+
+@media (max-width: 416px) {
+  html {
+    font-size: 35%; } }
+
+@media (max-width: 350px) {
+  html {
+    font-size: 25%; } }
+
+@media (max-width: 250px) {
+  html {
+    font-size: 20%; } }
+
+@media (max-width: 200px) {
+  html {
+    font-size: 15%; } }
+
+@media (max-width: 150px) {
+  html {
+    font-size: 10%; } }
+
+@media (max-width: 100px) {
+  html {
+    font-size: 7%; } }
+
+@media (max-width: 70px) {
+  html {
+    font-size: 4%; } }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  color: #bcbfc0; }
+
+main {
+  height: 100vh;
+  background-image: linear-gradient(rgba(2, 5, 22, 0.85), rgba(2, 5, 22, 0.85)), url(../img/hero-img.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed; }
+
+.totaliser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 390px;
+  max-height: 600px;
+  border-radius: 3px; }
+
+.totaliser__output {
+  position: relative;
+  padding: 5rem 2rem 2rem;
+  font-weight: 400;
+  text-align: right;
+  background-color: #0d0e11;
+  opacity: .85;
+  overflow: hidden;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+
+.totaliser__output img {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  height: 5rem;
+  margin-top: -.8rem; }
+
+.totaliser__output .output--main {
+  font-size: 6rem;
+  font-weight: 400;
+  display: block; }
+
+.totaliser__output {
+  display: block;
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+  word-spacing: .5rem;
+  letter-spacing: .2rem;
+  opacity: .7; }
+
+.textview {
+  border-radius: none;
+  background-color: #0d0e11;
+  color: #fff;
+  text-align: right;
+  border: none;
+  margin: .3rem -3rem;
+  display: inline-block;
+  margin-right: 4rem;
+  font-size: 2.6rem;
+  word-spacing: 2rem;
+  letter-spacing: .2rem;
+  opacity: .7; }
+
+.totaliser__controlls {
+  background-color: #16171b;
+  opacity: .95; }
+
+.btn {
+  display: inline-block;
+  float: left;
+  padding: 2rem 3rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: inherit;
+  opacity: .7;
+  border: none;
+  background-color: #16171b;
+  z-index: 1;
+  outline: none;
+  transition: all .1s;
+  cursor: pointer; }
+
+.btn:hover {
+  background-color: #141a21;
+  opacity: 1; }
+
+.totaliser__controlls::after {
+  display: block;
+  content: " ";
+  clear: both; }
