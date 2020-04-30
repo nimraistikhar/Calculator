@@ -52,11 +52,10 @@ body {
   color: #bcbfc0; }
 
 main {
-  height: 100vh;
-  background-image: linear-gradient(rgba(2, 5, 22, 0.85), rgba(2, 5, 22, 0.85)), url(../img/hero-img.jpg);
+  height: 105vh;
+  background-image: url(../img/hero-img3.jpg);
   background-size: cover;
-  background-position: 50%;
-  background-attachment: fixed; }
+  background-position: center; }
 
 .totaliser {
   position: absolute;
@@ -72,7 +71,7 @@ main {
   padding: 5rem 2rem 2rem;
   font-weight: 400;
   text-align: right;
-  background-color: #0d0e11;
+  background-color: #215c23;
   opacity: .85;
   overflow: hidden;
   border-top-left-radius: 3px;
@@ -93,27 +92,37 @@ main {
 .totaliser__output {
   display: block;
   margin-top: 2.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   word-spacing: .5rem;
   letter-spacing: .2rem;
   opacity: .7; }
 
 .textview {
-  border-radius: none;
-  background-color: #0d0e11;
-  color: #fff;
-  text-align: right;
-  border: none;
-  margin: .3rem -3rem;
-  display: inline-block;
-  margin-right: 4rem;
-  font-size: 2.6rem;
-  word-spacing: 2rem;
-  letter-spacing: .2rem;
-  opacity: .7; }
+  font-size: 6rem;
+  font-weight: 400;
+  display: block;
+  background-color: #215c23;
+  color: #f58295;
+  border: none; }
 
+/*
+.textview {
+    border-radius: none;
+    background-color:#215c23;
+    color: #fff;
+    text-align: right;
+    border: none;
+    margin: .3rem -3rem;
+    display: inline-block;
+    margin-right: 4rem;
+    font-size: 2.6rem;
+    word-spacing: 2rem;
+    letter-spacing: .2rem;
+    opacity: .7;
+}
+*/
 .totaliser__controlls {
-  background-color: #16171b;
+  background-color: #DAAD;
   opacity: .95; }
 
 .btn {
@@ -121,19 +130,22 @@ main {
   float: left;
   padding: 2rem 3rem;
   font-size: 3rem;
-  font-weight: 400;
-  color: inherit;
+  font-weight: 500;
+  color: #e40d3c;
   opacity: .7;
   border: none;
-  background-color: #16171b;
+  background-color: transparent;
   z-index: 1;
   outline: none;
   transition: all .1s;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .2s ease-in-out; }
 
 .btn:hover {
-  background-color: #141a21;
-  opacity: 1; }
+  background-color: transparent;
+  color: #ee1136;
+  opacity: 1;
+  transform: scale(1.4); }
 
 .totaliser__controlls::after {
   display: block;
